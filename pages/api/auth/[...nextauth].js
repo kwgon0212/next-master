@@ -8,8 +8,8 @@ import bcrypt from 'bcrypt';
 export const authOptions = {
   providers: [
     GithubProvider({
-      clientId: '27ba3d5c78e07e3f0e55',
-      clientSecret: '674b41756d567355fbb93adb94a4f594f00fdc11',
+      clientId: process.env.CLIENT_ID,
+      clientSecret: process.env.CLIENT_SECRET,
     }),
     CredentialsProvider({
       //1. 로그인페이지 폼 자동생성해주는 코드

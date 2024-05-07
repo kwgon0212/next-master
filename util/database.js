@@ -1,6 +1,5 @@
 import { MongoClient } from 'mongodb';
-const url =
-  'mongodb+srv://kwgon0102:rladnrhs2@cluster0.gw34ewa.mongodb.net/nextjs?retryWrites=true&w=majority&appName=Cluster0';
+const url = process.env.DB_URL;
 const options = { useNewUrlParser: true };
 let connectDB;
 
